@@ -5,7 +5,6 @@ rvm:
   - 2.1.2
 script:
   - bundle exec rake db:migrate
-  - bundle exec rake plugin_migrator:migrate
   - bundle exec rspec
 notifications:
    email: false
