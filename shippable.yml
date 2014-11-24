@@ -5,6 +5,6 @@ rvm:
   - 2.1.2
 script:
   - bundle exec rake db:migrate
-  - bundle exec rspec
+  - CODECLIMATE_REPO_TOKEN=0da701b9f8cf959ca4fae3837406b32ecd4366f4861dfeb80922eae57e2dc12e bundle exec rspec
 notifications:
    email: false
