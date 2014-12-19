@@ -117,5 +117,6 @@ DEPENDENCIES
   factory_girl_rails
   forgery
   global_options!
+  plugin_migrator
   rspec-rails
   sqlite3
