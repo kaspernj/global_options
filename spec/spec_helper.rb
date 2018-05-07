@@ -1,17 +1,14 @@
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-
 ENV["RAILS_ENV"] ||= 'test'
 require 'spec_helper'
 require_relative "dummy/config/environment"
 require 'rspec/rails'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'forgery'
 
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   config.expect_with :rspec do |c|
     c.syntax = [:should, :expect]
