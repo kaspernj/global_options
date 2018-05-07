@@ -1,4 +1,4 @@
-class CreateGlobalOptions < ActiveRecord::Migration
+class CreateGlobalOptions < ActiveRecord::Migration[5.1]
   def change
     create_table :global_options_global_options do |t|
       t.string :name, unique: true
