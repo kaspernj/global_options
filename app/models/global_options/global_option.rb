@@ -2,7 +2,7 @@ class GlobalOptions::GlobalOption < ActiveRecord::Base
   class NotFound < RuntimeError
   end
 
-  validate :name, presence: true, unique: true
+  validates :name, presence: true, uniqueness: true
 
   def self.by_name(name)
     option = where(name: name).first

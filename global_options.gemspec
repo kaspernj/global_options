@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "global_options"
   s.version     = GlobalOptions::VERSION
   s.authors     = ["Kasper Johansen"]
-  s.email       = ["k@spernj.org"]
+  s.email       = ["kaspernj@gmail.com"]
   s.homepage    = "https://www.github.com/kaspernj/global_options"
   s.summary     = "Set global options through your database."
   s.description = "Easily handle global options for your webpage by using nice pre-made database models."
