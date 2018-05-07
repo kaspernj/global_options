@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    global_options (0.0.2)
+    global_options (0.0.3)
       rails (>= 5.1.0)
 
 GEM
