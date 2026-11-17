@@ -14,6 +14,10 @@ class GlobalOptions::GlobalOption < ActiveRecord::Base
     find_by(name: name)&.value
   end
 
+  def self.by_name(name)
+    find_by(name: name) || raise(NotFound, "Global option #{name.inspect} was not found")
+  end
+
   def self.get!(name)
     find_by!(name: name).value
   end
